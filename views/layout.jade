@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/material/material.min.css")
+    script(src="/material/material.min.js")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    //- /link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css")
+    //- script. 
+    //-     window.onload= function(){
+    //-       $('#preloader').delay(1000).fadeOut()
+    //-       $('#load').delay(3000).fadeOut('slow')
+    //-       $('#site-content').delay(5000).fadeIn('slow')
+    //-     }
+    script.
+        function disableLoader(){
+            document.getElementById("grid").style.display='flex'
+            document.getElementById("footer").style.position='fixed'
+            document.getElementById("footer").style.bottom= 0
+        }
+    script.
+        function disableLoader2(){
+            document.getElementById("grid2").style.display='flex'
+            document.getElementById("footer").style.position='relative'
+            document.getElementById("footer").style.bottom= 0
+        }
+    script.
+        function disableLoader3(){
+            document.getElementById("grid3").style.display='flex'
+            document.getElementById("footer").style.position='relative'
+            document.getElementById("footer").style.bottom= 0
+        }
+
+  body(onload="disableLoader()")
+    block content
+    //- form(action="/auth", method="get")
+    //-     button(type='submit', class = 'mdl-button mdl-button--raised') Auth
+    //- div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
+    //-     header(class="mdl-layout__header")
+    //-         div(class="mdl-layout-icon")
+    //-         div(class="mdl-layout__header-row")
+    //-             span(class="mdl-layout__title") Gaurav Chaudhari
+    //-             div(class="mdl-layout-spacer")
+    //-             nav(class="mdl-navigation")
+    //-                 a(class= "mdl-navigation__link" href="#") Home
+    //-                 a(class= "mdl-navigation__link" href="#") About                  
+    //-                 a(class= "mdl-navigation__link" href="#") My Spotify Data
+    //-     div(class="mdl-layout__drawer")
+    //-         span(class="mdl-layout__title") Gaurav Chaudhari            
+    //-         nav(class="mdl-navigation")
+    //-             a(class= "mdl-navigation__link" href="#") Home
+    //-             a(class= "mdl-navigation__link" href="#") About                  
+    //-             a(class= "mdl-navigation__link" href="#") My Spotify Data
+      

@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
+      header(class="mdl-layout__header")
+          div(class="mdl-layout-icon" style="background-color:black" )
+          div(class="mdl-layout__header-row" style="background-color:black" )
+            span(class="mdl-layout__title") Gaurav Chaudhari
+            div(class="mdl-layout-spacer")
+            nav(class="mdl-navigation")
+              a(class= "mdl-navigation__link" href="/") Home
+              a(class= "mdl-navigation__link" href="/") About                  
+              a(class= "mdl-navigation__link" href="/myspotifydata") My Spotify Data
+      div(class="mdl-layout__drawer" style="background-color:black; color:white")
+          span(class="mdl-layout__title") Gaurav Chaudhari            
+          nav(class="mdl-navigation")
+            a(class= "mdl-navigation__link" href="/" style="color:white") Home
+            a(class= "mdl-navigation__link" href="/" style="color:white") About                  
+            a(class= "mdl-navigation__link" href="/myspotifydata" style="color:white") My Spotify Data
+      main(class="mdl-grid" style="min-width:100%")
+          div(class="mdl-cell mdl-cell--6-col" style="min-width:100%")
+            div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
+                div(class="mdl-card__media")
+                div(class="mdl-card__title")
+                    div(class="mdl-card__title-text")
+                        h5 Gaurav Chaudhari
+                div(class="mdl-card__supporting-text")
+                div(class="mdl-card__actions")
+                    button(class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect",type='submit')
+                        i(class="material-icons") email
+                    button(class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect",type='submit')
+                        i(class="material-icons") chat_bubble
+                    button(class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect",type='submit')
+                        i(class="material-icons") call
+      div(class="mdl-mini-footer" style="bottom:0;position:fixed;width:100%")
+
+        //- -var trackinfo = data
+        //- div(class="mdl-card mdl-card--raised mdl-shadow--6dp", id="nowplaying")
+        //-     div(class="mdl-card__media")
+        //-         img(src=trackinfo.image)
+        //-     div(class="mdl-card__title")
+        //-         h4(class='mdl-card__title-text') #{trackinfo.trackname}
+        //-     div(class="mdl-card__supporting-text") By #{trackinfo.artist}
+        //-     div(class="mdl-card__actions")
+        //-         form(action=trackinfo.url, method='get', target="_blank")
+        //-             button(class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect",type='submit')
+        //-                 i(class="material-icons") link
+      
+
