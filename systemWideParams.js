@@ -10,7 +10,7 @@
 const credentials = {
     clientId: '63474946df8542a6846202a412c9f98b',
     clientSecret: 'dd9c0061717942cf900fc53bd0da0ea7',
-    redirectUri: 'http://spotyinfo.herokuapp.com/callback'
+    redirectUri: 'https://spotyinfo.herokuapp.com/callback'
 }
 const dbURL = 'mongodb+srv://localApp:14041996gvc@spotycluster-w4kxr.mongodb.net/test?retryWrites=true&w=majority'
     
