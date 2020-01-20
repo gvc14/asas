@@ -42,7 +42,7 @@ router.get('/',async function(req, res, next) {
   })
   .then(()=>{
     res.render('spotify', {data: track, recent:recentlyplayed,myfavs:myfavs});
-  }).catch(err=>{
+  }).catch(async(err)=>{
     console.log("Some errors getting data" +'\n' +err);
     await functions.getRecentlyPlayedTracksFromDB(recentlyplayed);
     await functions.getMyFavTracksFromDB(myfavs)
