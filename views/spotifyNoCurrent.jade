@@ -19,25 +19,25 @@ block content
             a(class= "mdl-navigation__link" href="/myspotifydata") My Spotify Data  
       div(class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect" style="background-color:white" id="sticky1")
             div(class="mdl-tabs__tab-bar")
-                //- a(href="#nowplaying1" class="mdl-tabs__tab is-active" onclick="disableLoader()") Now Playing
-                a(href="#recentlyplayed" class="mdl-tabs__tab is-active" onclick="disableLoader2()") Recently Played
+                a(href="#nowplaying1" class="mdl-tabs__tab is-active" onclick="disableLoader()") Now Playing
+                a(href="#recentlyplayed" class="mdl-tabs__tab" onclick="disableLoader2()") Recently Played
                 a(href="#favs" class="mdl-tabs__tab" onclick="disableLoader3()") Long Term Favs                
-            //- div(class="mdl-tabs__panel is-active" id="nowplaying1")
-                //- div(id="preloader")
-                //-     div(id="load" class="mdl-spinner mdl-js-spinner is-active")
-                //- div(class="mdl-grid" style="display:none" id="grid")
-                //-     -var trackinfo=data
-                //-     div(class="mdl-card mdl-card--raised mdl-shadow--6dp", id="nowplaying")
-                //-         div(class="mdl-card__media" id="media")
-                //-             img(src=trackinfo.image)
-                //-         div(class="mdl-card__title")
-                //-             h4(class='mdl-card__title-text') #{trackinfo.trackname}
-                //-         div(class="mdl-card__supporting-text") By #{trackinfo.artist}
-                //-         div(class="mdl-card__actions")
-                //-             form(action=trackinfo.url, method='get', target="_blank")
-                //-                 button(class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect",type='submit')
-                //-                     i(class="material-icons") link
-            div(class="mdl-tabs__panel is-active" id="recentlyplayed")
+            div(class="mdl-tabs__panel is-active" id="nowplaying1")
+                div(id="preloader")
+                    div(id="load" class="mdl-spinner mdl-js-spinner is-active")
+                div(class="mdl-grid" style="display:none" id="grid")
+                    //- -var trackinfo=data
+                    div(class="mdl-card mdl-card--raised mdl-shadow--6dp", id="nowplaying")
+                        //- div(class="mdl-card__media" id="media")
+                        //-     img(src=trackinfo.image)
+                        div(class="mdl-card__title")
+                            h4(class='mdl-card__title-text') Currently Not Playing Anything
+                        //- div(class="mdl-card__supporting-text") By #{trackinfo.artist}
+                        //- div(class="mdl-card__actions")
+                            form(action=trackinfo.url, method='get', target="_blank")
+                                button(class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect",type='submit')
+                                    i(class="material-icons") link
+            div(class="mdl-tabs__panel" id="recentlyplayed")
                 div(class="mdl-grid" style="display:none" id="grid2")
                     -var favs=recent
                         each track in favs
