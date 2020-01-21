@@ -8,9 +8,9 @@ body{
 img {
   border-color: black;
   border-image: 10%;
-  width: 100%;
+  width: auto;
   height: auto;
-  max-width: 100%;
+  max-width: 50%;
   max-height: 100%;
 }
 
