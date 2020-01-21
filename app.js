@@ -13,6 +13,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/myspotifydata');
 var callbackRouter = require('./routes/callback');
 var auth = require('./routes/auth');
+var pics = require("./routes/pics")
 
 
 var app = express();
@@ -32,6 +33,7 @@ app.use('/', indexRouter);
 app.use('/myspotifydata', usersRouter);
 app.use('/callback',callbackRouter);
 app.use('/auth',auth);
+app.use('/pics',pics);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
