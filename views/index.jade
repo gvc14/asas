@@ -19,12 +19,10 @@ block content
             a(class= "mdl-navigation__link" href="/myspotifydata" style="color:white") My Spotify Data
       main(class="mdl-grid" style="min-width:100%")
         -var n=1
-        -while n < 28
           div(class="mdl-cell mdl-cell--6-col" style="min-width:100%")
             div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
                 div(class="mdl-card__media")
-                    img(src="/images" + n +".jpg")
-          -n++          
+                    img(src="/images" + n +".jpg")          
       div(class="mdl-mini-footer" style="bottom:0;position:fixed;width:100%")
 
         //- -var trackinfo = data
