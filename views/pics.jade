@@ -18,7 +18,7 @@ block content
             a(class= "mdl-navigation__link" href="/" style="color:white") About                  
             a(class= "mdl-navigation__link" href="/myspotifydata" style="color:white") My Spotify Data
       main
-        div(class="mdl-grid mdl-grid" style="display: flex")
+        div(class="mdl-grid mdl-grid" style="display: flex;flex-wrap:wrap")
           -var n=26
           while n > 0
               img(src="/images/" + n +".jpg" id="imagepics")
