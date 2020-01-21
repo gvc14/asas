@@ -15,8 +15,12 @@ img {
 }
 
 #imagepics{
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   max-width: 30%;
   height: auto;
+}
+#imagepics:hover{
+  box-shadow: gray;
 }
 
 #aboutcard{
