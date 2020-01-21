@@ -21,11 +21,10 @@ block content
         div(class="mdl-grid mdl-grid--no-spacing" style="min-width:100%; display: flex")
           -var n=27
           while n > 0
-            div(class="mdl-cell mdl-cell--6-col" style="min-width:100%")
-                div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
-                    div(class="mdl-card__media")
-                        img(src="/images/" + n +".jpg")
-            -n=n-1                      
+              div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
+                  div(class="mdl-card__media")
+                      img(src="/images/" + n +".jpg")
+              -n=n-1                      
       div(class="mdl-mini-footer" style="bottom:0;position:fixed;width:100%")
 
         //- -var trackinfo = data
