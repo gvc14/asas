@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/bb7d15ff-f998-400d-98ae-3e5774ca1068/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/gauravchaudhari",
+    "appService.deploySubpath": ""
+}
