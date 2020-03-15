@@ -14,6 +14,11 @@ img {
   max-height: 100%;
 }
 
+cardimage{
+  width: 256px;
+  height: 256px;
+}
+
 #imagepics{
   transition: 0.3s;
   max-width: 30%;
