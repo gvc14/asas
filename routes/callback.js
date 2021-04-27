@@ -12,7 +12,7 @@ var dbclient = new MongoClient(dbURL,{useUnifiedTopology: true, useNewUrlParser:
 router.get('/', async function(req, res, next) {
     var code = url.parse(req.url,true).query.code;
     await functions.getTokensFromSpotify(spotifyApi,code);
-    res.redirect('https://gauravchaudhari.azurewebsites.net/')
+    res.redirect('https://gauravchaudhari.herokuapp.com/')
 });
 
 module.exports = router;
