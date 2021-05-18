@@ -10,21 +10,21 @@ router.get('/',async function(req, res, next) {
   //   access_token:'',
   //   refresh_token:''
   // };
-//   let track={
-//     trackname:'',
-//     artist:'',
-//     album:'',
-//     url:'',
-//     image:'',
-//     preview:''
+  let track={
+    trackname:'',
+    artist:'',
+    album:'',
+    url:'',
+    image:'',
+    preview:''
 
-//   };
-//   let arr=[];
-//   let arr1=[];
-//   await functions.refreshTokensFromSpotify(spotifyApi);
-//   await functions.getMyFavTracksFromSpotify(spotifyApi,arr1);
-//   await functions.getMyRecentlyPlayedFromSpotify(spotifyApi,arr);
-//   await sleep(500);
+  };
+  let arr=[];
+  let arr1=[];
+  await functions.refreshTokensFromSpotify(spotifyApi);
+  await functions.getMyFavTracksFromSpotify(spotifyApi,arr1);
+  await functions.getMyRecentlyPlayedFromSpotify(spotifyApi,arr);
+  await sleep(500);
   // spotifyApi.getMyCurrentPlayingTrack()
   // .then(async(data)=>{
   //       track.trackname = data.body.item.name;
