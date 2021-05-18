@@ -1,0 +1,66 @@
+extends layout
+
+block content
+  div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
+      header(class="mdl-layout__header")
+          div(class="mdl-layout-icon" style="background-color:black" )
+          div(class="mdl-layout__header-row" style="background-color:black" )
+            span(class="mdl-layout__title") Gaurav Chaudhari
+            div(class="mdl-layout-spacer")
+            nav(class="mdl-navigation")
+              a(class= "mdl-navigation__link" href="/") Home
+              a(class= "mdl-navigation__link" href="/pics") Snaps                  
+              a(class= "mdl-navigation__link" href="/myspotifydata") My Spotify Data
+      div(class="mdl-layout__drawer" style="background-color:black; color:white")
+          span(class="mdl-layout__title") Gaurav Chaudhari            
+          nav(class="mdl-navigation")
+            a(class= "mdl-navigation__link" href="/" style="color:white") Home
+            a(class= "mdl-navigation__link" href="/pics" style="color:white") Snaps
+            a(class= "mdl-navigation__link" href="/myspotifydata" style="color:white") My Spotify Data
+      main
+        h4(style="margin-top:20px; text-align:center ")  Audio Sinks
+        div(class="mdl-grid mdl-grid--no-spacing" style="margin-top:10px")
+          div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
+            div(class="mdl-card__media")
+              img(src="/images/rha.jpg", class="cardimage")
+            div(class="mdl-card__title")
+              h4(class='mdl-card__title-text') RHA - MA750
+            div(class="mdl-card__supporting-text") IEM
+          div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
+            div(class="mdl-card__media")
+              img(src="/images/m50x.jpg", class="cardimage")            
+            div(class="mdl-card__title")
+              h4(class='mdl-card__title-text') ATH - M50X
+            div(class="mdl-card__supporting-text") Over-ear Headphone 
+          div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
+            div(class="mdl-card__title")
+              h4(class='mdl-card__title-text') Galaxy Buds Plus
+            div(class="mdl-card__supporting-text") TWS IEM   
+        h4(style="margin-top:20px;text-align:center") Audio Sources
+        div(class="mdl-grid mdl-grid--no-spacing" style="margin-top:10px")
+          div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
+            div(class="mdl-card__media")
+              img(src="/images/btr3.jpg", class="cardimage")            
+            div(class="mdl-card__title")
+              h4(class='mdl-card__title-text') Fiio BTR3
+            div(class="mdl-card__supporting-text") LDAC, AptX, AAC                      
+        //- -var n=1
+        //- div(class="mdl-cell mdl-cell--6-col" style="min-width:100%")
+        //-     div(class="mdl-card mdl-card--raised mdl-shadow--6dp")
+        //-         div(class="mdl-card__media")
+        //-             img(src="/images/" + n +".jpg")          
+      div(class="mdl-mini-footer" style="bottom:0;position:fixed;width:100%")
+
+        //- -var trackinfo = data
+        //- div(class="mdl-card mdl-card--raised mdl-shadow--6dp", id="nowplaying")
+        //-     div(class="mdl-card__media")
+        //-         img(src=trackinfo.image)
+        //-     div(class="mdl-card__title")
+        //-         h4(class='mdl-card__title-text') #{trackinfo.trackname}
+        //-     div(class="mdl-card__supporting-text") By #{trackinfo.artist}
+        //-     div(class="mdl-card__actions")
+        //-         form(action=trackinfo.url, method='get', target="_blank")
+        //-             button(class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect",type='submit')
+        //-                 i(class="material-icons") link
+      
+
